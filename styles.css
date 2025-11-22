@@ -21,6 +21,30 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Previne scroll horizontal causado pela animação */
+}
+
+/* Efeito de fundo animado */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: var(--bg-color);
+    background-image: 
+        linear-gradient(var(--primary-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--primary-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: move-grid 10s linear infinite;
+    opacity: 0.15; /* Deixa a grade sutil */
+}
+
+@keyframes move-grid {
+    from { background-position: 0 0; }
+    to { background-position: 0 -80px; } /* Move a grade verticalmente */
 }
 
 header {
@@ -40,19 +64,33 @@ header {
 /* Estado Final: Fixo no topo após a busca */
 .busca-realizada header {
     flex: 0; /* Remove a capacidade de crescer */
-    padding: 40px 20px;
+    padding: 20px;
     position: sticky;
     top: 0;
     justify-content: flex-start; /* Alinha ao topo */
     border-bottom: 1px solid var(--tertiary-color);
+
+    /* Efeito de vidro fosco (Glassmorphism) */
+    background-color: rgba(13, 12, 29, 0.75); /* Cor de fundo com 75% de opacidade */
+    backdrop-filter: blur(10px); /* Desfoque do conteúdo atrás */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
 }
 
 /* Estilo para o título/logo */
 .logo-titulo {
+    display: flex; /* Alinha o ícone e o texto */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Espaço entre o ícone e o texto */
     font-size: 3em; /* Tamanho da fonte do título */
     color: var(--primary-color); /* Uma cor clara para o título */
     margin-bottom: 20px; /* Espaço entre o título e a barra de busca */
     font-weight: 700;
+}
+
+.logo-icon {
+    width: 1em; /* Largura relativa ao tamanho da fonte */
+    height: 1em; /* Altura relativa ao tamanho da fonte */
+    /* A cor é herdada do .logo-titulo através de 'fill: currentColor' no SVG */
 }
 
 /* Container da barra de busca */
@@ -167,12 +205,6 @@ header {
     padding-bottom: 0.5rem;
 }
 
-/*.filtro-grupo h4 { /* Este seletor não é mais necessário com a nova estrutura */
-    /* margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
-    } */
-
 .filtro-item {
     display: block;
     margin-bottom: 0.5rem;
@@ -214,15 +246,17 @@ article {
     background: var(--card-bg-color); /* Um pouco mais claro que o fundo */
     border-radius: 8px; /* Bordas arredondadas para o card */
     padding: 1.5rem; /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    border: 1px solid transparent; /* Borda transparente para evitar pulo no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transição suave */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer; /* Indica que o card é clicável */
 }
 
 article:hover {
-    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    transform: translateY(-4px); /* Eleva o card ao passar o mouse */
     border: 1px solid var(--primary-color);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -237,11 +271,14 @@ article h2 {
 
 article p {
     margin: 0.5rem 0; /* Margem superior e inferior */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
     font-size: 1rem; /* Tamanho da fonte */
     margin-bottom: 0.5rem; /* Margem inferior */
     color: var(--secondary-color); /* Cor do texto */
 }
+
+/* Esconde a descrição e o link no card da grade */
+article p.descricao, article a { display: none; }
 
 article p strong {
     color: var(--tertiary-color); /* Cor do texto em negrito */
@@ -256,6 +293,124 @@ article a {
 
 article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* --- Estilos do Modal --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.visivel {
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(5px); /* Adiciona desfoque ao fundo */
+    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com Safari */
+}
+
+.modal-conteudo {
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 3px solid var(--primary-color);
+    width: 90%;
+    max-width: 850px; /* Aumenta a largura máxima para acomodar a imagem */
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.visivel .modal-conteudo {
+    transform: scale(1);
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-fechar:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para o conteúdo dentro do modal */
+#modal-corpo {
+    display: flex;
+    gap: 2rem;
+}
+
+.modal-capa {
+    flex: 0 0 250px; /* Não cresce, não encolhe, base de 250px */
+}
+
+.modal-capa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-info {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+#modal-corpo h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-top: 0;
+    white-space: nowrap; /* Tenta manter o título em uma linha */
+}
+
+#modal-corpo p {
+    line-height: 1.7;
+    color: var(--secondary-color);
+}
+
+#modal-corpo a {
+    display: inline-block; /* Para o botão ter dimensões */
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+#modal-corpo a:hover {
+    background-color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.modal-info p {
+    margin-top: 0;
+}
+
+/* Ajustes para o modal em telas menores */
+@media (max-width: 768px) {
+    #modal-corpo { flex-direction: column; }    
+    #modal-corpo h2 {
+        white-space: normal; /* Permite quebra de linha em telas menores */
+    }
 }
 
 .footer {

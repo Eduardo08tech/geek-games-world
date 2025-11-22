@@ -27,6 +27,9 @@ let filtrosGeneroContainer = document.querySelector("#filtros-genero");
 let filtrosPlataformaContainer = document.querySelector("#filtros-plataforma");
 let dados = [];
 let botaoBusca = document.querySelector("#botao-busca");
+const modal = document.getElementById('modal-jogo');
+const modalCorpo = document.getElementById('modal-corpo');
+const modalFechar = document.querySelector('.modal-fechar');
 let debounceTimeout;
 let primeiraBuscaRealizada = false;
 
@@ -54,6 +57,16 @@ async function inicializar() {
         if (filtrosToggle && filtrosContainer) {
             filtrosToggle.addEventListener('click', () => {
                 filtrosContainer.classList.toggle('ativo');
+            });
+        }
+
+        // Event listeners para fechar o modal
+        if (modal && modalFechar) {
+            modalFechar.addEventListener('click', () => modal.classList.remove('visivel'));
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) { // Fecha se clicar no overlay
+                    modal.classList.remove('visivel');
+                }
             });
         }
     } catch (error) {
@@ -96,27 +109,31 @@ function criarFiltros() {
         jogo.plataforma.forEach(p => todasPlataformas.add(p));
     });
 
-    // Cria o contêiner para o conteúdo dos filtros (para o accordion mobile)
-    const filtrosConteudo = document.createElement('div');
-    filtrosConteudo.className = 'filtros-conteudo';
+    // Adiciona título para Gêneros
+    const tituloGenero = document.createElement('h4');
+    tituloGenero.textContent = 'Gênero';
+    filtrosGeneroContainer.appendChild(tituloGenero);
 
     // Cria checkboxes para Gêneros
     [...todosGeneros].sort().forEach(genero => {
         const div = document.createElement('div');
         div.className = 'filtro-item';
         div.innerHTML = `<input type="checkbox" id="${genero}" value="${genero}"><label for="${genero}">${genero}</label>`;
-        filtrosConteudo.appendChild(div); // Adiciona ao novo contêiner
+        filtrosGeneroContainer.appendChild(div);
     });
+
+    // Adiciona título para Plataformas
+    const tituloPlataforma = document.createElement('h4');
+    tituloPlataforma.textContent = 'Plataforma';
+    filtrosPlataformaContainer.appendChild(tituloPlataforma);
 
     // Cria checkboxes para Plataformas
     [...todasPlataformas].sort().forEach(plataforma => {
         const div = document.createElement('div');
         div.className = 'filtro-item';
         div.innerHTML = `<input type="checkbox" id="${plataforma}" value="${plataforma}"><label for="${plataforma}">${plataforma}</label>`;
-        filtrosConteudo.appendChild(div); // Adiciona ao novo contêiner
+        filtrosPlataformaContainer.appendChild(div);
     });
-
-    document.querySelector('.filtros-container').appendChild(filtrosConteudo);
 }
 
 function aplicarFiltros() {
@@ -152,15 +169,37 @@ function renderizarCards(dados) {
     for (let dado of dados) {
         let article = document.createElement("article");
         article.classList.add("card");
+        // Adiciona um dataset para facilmente recuperar os dados do jogo depois
+        article.dataset.nomeJogo = dado.nome;
+
         article.innerHTML = `
             <h2>${dado.nome} (${dado.ano})</h2>
-            <p>${dado.descricao}</p>
             <p><strong>Gêneros:</strong> ${dado.genero.join(", ")}</p>
             <p><strong>Plataformas:</strong> ${dado.plataforma.join(", ")}</p>
-            <a href="${dado.link}" target="_blank">Saiba mais</a>
-        `
+        `;
+
+        article.addEventListener('click', () => mostrarDetalhesJogo(dado.nome));
         cardContainer.appendChild(article);
     }
+}
+
+function mostrarDetalhesJogo(nomeJogo) {
+    const jogo = dados.find(j => j.nome === nomeJogo);
+    if (!jogo) return;
+
+    modalCorpo.innerHTML = `
+        <div class="modal-capa">
+            <img src="${jogo.capa}" alt="Capa do jogo ${jogo.nome}">
+        </div>
+        <div class="modal-info">
+            <h2>${jogo.nome} (${jogo.ano})</h2>
+            <p class="descricao">${jogo.descricao}</p>
+            <p><strong>Gêneros:</strong> ${jogo.genero.join(", ")}</p>
+            <p><strong>Plataformas:</strong> ${jogo.plataforma.join(", ")}</p>
+            <a href="${jogo.link}" target="_blank">Visitar Página Oficial</a>
+        </div>
+    `;
+    modal.classList.add('visivel');
 }
 
 inicializar(); // Inicia a aplicação
