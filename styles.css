@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Importa as fontes */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #9f50ff;      /* Roxo Neon (para títulos e links) */
+    --secondary-color: #e0e0e0;    /* Cinza bem claro (para texto principal) */
+    --tertiary-color: #00c2cb;     /* Ciano (para detalhes e destaques secundários) */
+    --bg-color: #0D0C1D;           /* Azul super escuro/quase preto (fundo principal) */
+    --accent-color: #ffeb3b;       /* Amarelo vibrante (para hovers e ações) */
+    --card-bg-color: #19182A;      /* Azul escuro para cards e contêineres */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Quantico", sans-serif; /* Fonte Pixelada para o Título */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /* Estado Inicial: Centralizado na página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center;    
+    flex: 1; /* Faz o header crescer para ocupar o espaço disponível até o rodapé */
+    padding: 20px;
+    background: var(--bg-color);
+    z-index: 10;
+    transition: flex-grow 0.6s cubic-bezier(0.77, 0, 0.175, 1); /* Animação suave */
+}
+
+/* Estado Final: Fixo no topo após a busca */
+.busca-realizada header {
+    flex: 0; /* Remove a capacidade de crescer */
+    padding: 40px 20px;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start; /* Alinha ao topo */
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+/* Estilo para o título/logo */
+.logo-titulo {
+    font-size: 3em; /* Tamanho da fonte do título */
+    color: var(--primary-color); /* Uma cor clara para o título */
+    margin-bottom: 20px; /* Espaço entre o título e a barra de busca */
+    font-weight: 700;
+}
+
+/* Container da barra de busca */
+.container-busca {
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima para a barra de busca */
+    display: flex;
+    gap: 10px;
+}
+
+#campo-busca {
+    width: 100%; /* Faz a barra ocupar todo o espaço do container */
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 1rem; /* Arredonda as bordas */
+    border: 1px solid var(--tertiary-color); /* Define a borda */
+    background: var(--bg-color); /* Cor de fundo */
+    font-family: inherit; /* Herda a família da fonte do elemento pai */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+    color: var(--secondary-color); /* Cor do texto digitado */
+}
+
+#campo-busca::placeholder {
+    color: #e0e0e0a6; /* Usa a cor secundária com transparência */
+}
+
+.container-busca input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+}
+
+#botao-busca {
+    padding: 15px 2rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Arredonda as bordas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    font-family: inherit; /* Herda a família da fonte */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
+    background-color: var(--bg-color); /* Cor de fundo */
+    color: var(--secondary-color); /* Cor do texto */
+    border: 1px solid var(--bg-color); /* Adiciona uma borda */
+}
+
+#botao-busca:hover {
+    background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
+    color: var(--card-bg-color); /* Muda a cor do texto ao passar o mouse */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
+}
+
+#botao-busca:active {
+    transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
+}
+
+/* Animação de pulso para o botão */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(159, 80, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(159, 80, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(159, 80, 255, 0);
+    }
+}
+
+.site-content {
+    /* Estado Inicial: Oculto */
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s 0.4s ease-out, transform 0.5s 0.4s ease-out; /* Animação de fade-in com delay */
+}
+
+/* Estado Final: Visível após a busca */
+.busca-realizada .site-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.conteudo-principal {
+    display: none; /* Oculto por padrão */
+    gap: 1.5rem;
+    max-width: 100rem; /* Aumentado de 80rem para 90rem */
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.conteudo-principal.visivel {
+    display: flex; /* Torna-se visível quando a classe .visivel é adicionada */
+}
+
+.filtros-container {
+    background-color: var(--card-bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 250px; /* Largura fixa para a coluna de filtros */
+    align-self: flex-start; /* Alinha ao topo */
+    position: sticky;
+    top: 10rem; /* Ajuste conforme a altura do seu header */
+}
+
+.filtros-container h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--tertiary-color);
+    padding-bottom: 0.5rem;
+}
+
+/*.filtro-grupo h4 { /* Este seletor não é mais necessário com a nova estrutura */
+    /* margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    } */
+
+.filtro-item {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.filtro-item label {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.filtro-item input[type="checkbox"] {
+    /* Estilo customizado para checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.filtro-item input[type="checkbox"]:checked {
+    background-color: var(--tertiary-color);
+}
+
+main {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+article {
+    background: var(--card-bg-color); /* Um pouco mais claro que o fundo */
+    border-radius: 8px; /* Bordas arredondadas para o card */
+    padding: 1.5rem; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article:hover {
+    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+    margin-top: 0; /* Remove a margem superior */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    margin-bottom: 0.25rem; /* Margem inferior */
+    color: var(--primary-color); /* Cor do texto */
+}
+
+article p {
+    margin: 0.5rem 0; /* Margem superior e inferior */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    color: var(--secondary-color); /* Cor do texto */
+}
+
+article p strong {
+    color: var(--tertiary-color); /* Cor do texto em negrito */
+    font-weight: 400; /* Peso da fonte */
+}
+
+article a {
+    color: var(--primary-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 200; /* Peso da fonte */
+}
+
+article a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+    background-color: var(--card-bg-color); /* Usa a cor de fundo dos cards */
+    border-top: 2px solid var(--primary-color); /* Borda superior com cor primária */
+    width: 100%;
+}
+
+.footer-location {
+    color: var(--secondary-color); /* Cor do texto */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.footer-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Habilita o layout flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os links */
+    margin-bottom: 20px; /* Adiciona uma margem abaixo da lista de links */
+}
+
+.footer-links a {
+    color: var(--tertiary-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.2s; /* Transição suave para a cor */
+}
+
+.footer-links a:hover {
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse */
+}
+
+.footer p {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 0.9rem;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Estilos para o botão de toggle dos filtros */
+.filtros-toggle {
+    display: none; /* Oculto em telas grandes */
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.filtros-toggle h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+/* Ícone de seta para o botão de toggle */
+.filtros-toggle h3::after {
+    content: '▼'; /* Seta para baixo */
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+        flex-direction: column;
+    }
+    .filtros-container {
+        width: 100%;
+        position: static; /* Remove o sticky em telas menores */
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    header {
+        padding: 1rem; /* Reduz o espaçamento interno */
+    }
+
+    .logo-titulo {
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 0 1rem; /* Adiciona espaçamento lateral */
+    }
+
+    article:hover {
+        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    }
+
+    .filtros-toggle {
+        display: block; /* Mostra o botão em telas menores */
+        padding: 1.5rem;
+    }
+
+    .filtros-conteudo {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out, padding 0.4s ease;
+    }
+
+    .filtros-container.ativo > .filtros-conteudo {
+        max-height: 1000px; /* Altura grande para permitir expansão */
+        padding: 0 1.5rem 1.5rem; /* Adiciona padding quando ativo */
+    }
+    .filtros-container.ativo > .filtros-toggle h3::after {
+        transform: rotate(180deg); /* Gira a seta para cima */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-titulo {
+        font-size: 2em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .container-busca {
+        flex-direction: column; /* Organiza em coluna */
+        gap: 0.5rem; /* Espaçamento entre os itens */
+    }
+
+    #campo-busca,
+    #campo-busca::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    #botao-busca {
+        width: 100%; /* Faz o botão ocupar a largura total */
+        justify-content: center; /* Centraliza o texto do botão */
+    }
+
+    article h2 {
+        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Universo dos Games</title>
+    <link rel="icon" type="image/ico" href="logo-ug.ico">
+</head>
+<body>
+    <header>
+        <h1 class="logo-titulo">Universo dos Games</h1>
+        <div class="container-busca">
+            <input type="text" id="campo-busca" placeholder="Buscar por nome, gênero ou plataforma...">
+            <button id="botao-busca">Buscar</button>
+        </div>
+        <div class="frase-motivacional">
+            <p id="frase"></p>
+        </div>
+    </header>
+    
+    <div class="site-content">
+        <div class="conteudo-principal">
+            <aside class="filtros-container">
+                <button class="filtros-toggle">
+                    <h3>Filtros</h3>
+                </button>
+                <div class="filtros-conteudo">
+                    <div class="filtro-grupo" id="filtros-genero">
+                        <h4>Gênero</h4>
+                        <!-- Checkboxes de gênero serão inseridos aqui -->
+                    </div>
+                    <div class="filtro-grupo" id="filtros-plataforma">
+                        <h4>Plataforma</h4>
+                        <!-- Checkboxes de plataforma serão inseridos aqui -->
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <section class="card-container">
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/Eduardo08tech">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.alura.com.br">Alura</a>
+            </li>
+            <li>
+                <a href="https://www.xbox.com/pt-BR/">Xbox</a>
+            </li>
+            <li>
+                <a href="https://store.steampowered.com/">Steam</a>
+            </li>
+            <li>
+                <a href="https://store.epicgames.com/pt-BR/">Epic Games</a>
+            </li>
+        </ul>
+        <p>Em missão a Imersão Dev, apresento um projeto Geek apresentando alguns dos melhores jogos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
