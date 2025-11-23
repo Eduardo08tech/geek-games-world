@@ -166,6 +166,11 @@ function renderizarCards(dados) {
     // Limpa o container antes de renderizar novos cards
     cardContainer.innerHTML = "";
 
+    if (dados.length === 0) {
+        cardContainer.innerHTML = `<p style="color: var(--secondary-color); font-size: 1.2rem;">Poxa, nenhum jogo encontrado. Vamos tente uma nova busca!</p>`;
+        return;
+    }
+
     for (let dado of dados) {
         let article = document.createElement("article");
         article.classList.add("card");
