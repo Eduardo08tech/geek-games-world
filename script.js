@@ -20,25 +20,47 @@ document.addEventListener('DOMContentLoaded', () => {
     elementoFrase.textContent = `"${frasesMotivacionais[indiceAleatorio]}"`;
 });
 
-let cardContainer = document.querySelector(".card-container");
-let campoBusca = document.querySelector("#campo-busca");
-let conteudoPrincipal = document.querySelector(".conteudo-principal");
-let filtrosGeneroContainer = document.querySelector("#filtros-genero");
-let filtrosPlataformaContainer = document.querySelector("#filtros-plataforma");
+let cardContainer;
+let campoBusca;
+let conteudoPrincipal;
+let filtrosGeneroContainer;
+let filtrosPlataformaContainer;
 let dados = [];
-let botaoBusca = document.querySelector("#botao-busca");
+let botaoBusca;
 const modal = document.getElementById('modal-jogo');
 const modalCorpo = document.getElementById('modal-corpo');
 const modalFechar = document.querySelector('.modal-fechar');
+let secaoFavoritos;
+let cardContainerFavoritos;
 let debounceTimeout;
 let primeiraBuscaRealizada = false;
+
+// Lista de jogos favoritos (nomes dos jogos)
+const jogosFavoritos = ["Peak", "Among Us", "Minecraft", "Grand Theft Auto V",  "Fortnite"];
 
 // Carrega os dados e inicializa a aplicação
 async function inicializar() {
     try {
+        // Inicializa os elementos do DOM
+        cardContainer = document.querySelector(".card-container");
+        campoBusca = document.querySelector("#campo-busca");
+        conteudoPrincipal = document.querySelector(".conteudo-principal");
+        filtrosGeneroContainer = document.querySelector("#filtros-genero");
+        filtrosPlataformaContainer = document.querySelector("#filtros-plataforma");
+        botaoBusca = document.querySelector("#botao-busca");
+        secaoFavoritos = document.getElementById('secao-favoritos');
+        cardContainerFavoritos = document.querySelector('.card-container-favoritos');
+        
         let resposta = await fetch("data.json");
         dados = await resposta.json();
         criarFiltros();
+        
+        // Torna o conteúdo principal visível para mostrar os favoritos
+        conteudoPrincipal.classList.add('visivel');
+        conteudoPrincipal.classList.add('busca-inicial');
+        
+        // Exibe os jogos favoritos na página inicial
+        exibirFavoritos();
         
         // Adiciona animação de pulso ao botão de busca
         botaoBusca.style.animation = 'pulse 2s infinite';
@@ -84,7 +106,11 @@ function realizarBusca() {
 
     // 1. Torna o conteúdo principal visível
     conteudoPrincipal.classList.add('visivel');
-    // 2. Aplica os filtros (que renderizarão os cards)
+    // 2. Remove a classe de busca inicial para mostrar os filtros
+    conteudoPrincipal.classList.remove('busca-inicial');
+    // 3. Esconde a seção de favoritos
+    secaoFavoritos.classList.add('oculto');
+    // 4. Aplica os filtros (que renderizarão os cards)
     aplicarFiltros();
 }
 
@@ -100,6 +126,34 @@ function handleBuscaKeyDown(event) {
         realizarBusca();
     }
 }
+
+function exibirFavoritos() {
+    const jogosFavoritosFiltrados = dados.filter(jogo => jogosFavoritos.includes(jogo.nome));
+    renderizarCardsFavoritos(jogosFavoritosFiltrados);
+}
+
+function renderizarCardsFavoritos(jogos) {
+    // Limpa o container antes de renderizar novos cards
+    cardContainerFavoritos.innerHTML = "";
+
+    for (let jogo of jogos) {
+        let div = document.createElement("div");
+        div.classList.add("card-favorito");
+        // Adiciona um dataset para facilmente recuperar os dados do jogo depois
+        div.dataset.nomeJogo = jogo.nome;
+
+        div.innerHTML = `
+            <img src="${jogo.capa}" alt="Capa do jogo ${jogo.nome}">
+            <div class="overlay-favorito">
+                <h3>${jogo.nome}</h3>
+            </div>
+        `;
+
+        div.addEventListener('click', () => mostrarDetalhesJogo(jogo.nome));
+        cardContainerFavoritos.appendChild(div);
+    }
+}
+
 function criarFiltros() {
     const todosGeneros = new Set();
     const todasPlataformas = new Set();
@@ -112,27 +166,44 @@ function criarFiltros() {
     // Adiciona título para Gêneros
     const tituloGenero = document.createElement('h4');
     tituloGenero.textContent = 'Gênero';
+    const containerGeneros = document.createElement('div');
     filtrosGeneroContainer.appendChild(tituloGenero);
+    filtrosGeneroContainer.appendChild(containerGeneros);
 
     // Cria checkboxes para Gêneros
     [...todosGeneros].sort().forEach(genero => {
         const div = document.createElement('div');
         div.className = 'filtro-item';
         div.innerHTML = `<input type="checkbox" id="${genero}" value="${genero}"><label for="${genero}">${genero}</label>`;
-        filtrosGeneroContainer.appendChild(div);
+        containerGeneros.appendChild(div);
     });
 
     // Adiciona título para Plataformas
     const tituloPlataforma = document.createElement('h4');
     tituloPlataforma.textContent = 'Plataforma';
+    const containerPlataformas = document.createElement('div');
     filtrosPlataformaContainer.appendChild(tituloPlataforma);
+    filtrosPlataformaContainer.appendChild(containerPlataformas);
 
     // Cria checkboxes para Plataformas
     [...todasPlataformas].sort().forEach(plataforma => {
         const div = document.createElement('div');
         div.className = 'filtro-item';
         div.innerHTML = `<input type="checkbox" id="${plataforma}" value="${plataforma}"><label for="${plataforma}">${plataforma}</label>`;
-        filtrosPlataformaContainer.appendChild(div);
+        containerPlataformas.appendChild(div);
+    });
+
+    // Adicionar funcionalidade de accordion aos filtros
+    const titulos = document.querySelectorAll('.filtro-grupo h4');
+    titulos.forEach(titulo => {
+        // Colapse por padrão
+        titulo.parentElement.classList.add('colapsado');
+        titulo.classList.add('colapsado');
+        
+        titulo.addEventListener('click', () => {
+            titulo.classList.toggle('colapsado');
+            titulo.parentElement.classList.toggle('colapsado');
+        });
     });
 }
 

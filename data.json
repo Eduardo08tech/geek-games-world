@@ -1,57 +1,21 @@
 [
 {
-    "nome":"Control",
-    "descricao":"Após uma agência secreta em Nova York ser invadida por uma ameaça de outro mundo, você se torna a nova Diretora lutando para recuperar o Controle.",
-    "ano":2019,
-    "link":"https://store.epicgames.com/pt-BR/p/control",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/870780/library_600x900.jpg",
-    "genero": ["Ação", "Aventura", "Tiro em Terceira Pessoa"],
-    "plataforma": ["Epic Games", "Steam", "Xbox"]
+    "nome":"Alan Wake 2",
+    "descricao":"Uma série de assassinatos ritualísticos ameaça Bright Falls. Saga Anderson, uma agente do FBI, chega para investigar, enquanto Alan Wake tenta escapar do Lugar Obscuro.",
+    "ano":2023,
+    "link":"https://www.epicgames.com/store/pt-BR/p/alan-wake-2",
+    "capa":"https://cdn1.epicgames.com/offer/4f77ae17aae542bb94fe4e8adbe37f06/EGS_AlanWake2_Remedy_S2_1200x1600-c7c8091ddac9f9604c81990a1c5d909a",
+    "genero": ["Survival Horror", "Aventura"],
+    "plataforma": ["Epic Games", "Xbox"]
 },
 {
-    "nome":"Gears 5",
-    "descricao":"Com a guerra total se aproximando, Kait Diaz se liberta para descobrir sua conexão com o inimigo e descobre o verdadeiro perigo para Sera – ela mesma.",
-    "ano":2019,
-    "link":"https://www.xbox.com/pt-BR/games/store/gears-5/c2kdnlt2h7u6",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1097840/library_600x900.jpg",
-    "genero": ["Ação", "Tiro em Terceira Pessoa"],
-    "plataforma": ["Xbox", "Steam"]
-},
-{
-    "nome":"Grand Theft Auto V",
-    "descricao":"Um jovem malandro de rua, um ladrão de bancos aposentado e um psicopata aterrorizante se envolvem com o submundo do crime, o governo dos EUA e a indústria do entretenimento.",
-    "ano":2013,
-    "link":"https://www.rockstargames.com/gta-v",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/271590/library_600x900.jpg",
-    "genero": ["Ação", "Aventura", "Mundo Aberto"],
-    "plataforma": ["Rockstar Games", "Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Hellblade II: Senua's Saga",
-    "descricao":"A sequência da premiada saga de Senua. Uma jornada brutal de sobrevivência através do mito e da tirania da Islândia Viking.",
-    "ano":2024,
-    "link":"https://www.xbox.com/pt-BR/games/store/senuas-saga-hellblade-ii/9p3wxcc0ztn4",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2461850/library_600x900.jpg",
-    "genero": ["Ação", "Aventura"],
-    "plataforma": ["Xbox", "Steam"]
-},
-{
-    "nome":"Red Dead Redemption 2",
-    "descricao":"América, 1899. O fim da era do Velho Oeste começou. Depois de um assalto que deu errado na cidade de Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a fugir.",
+    "nome":"Among Us",
+    "descricao":"Um jogo de trabalho em equipe e traição para 4-15 jogadores. Em uma nave espacial, os tripulantes tentam completar tarefas enquanto um ou mais impostores tentam sabotar e eliminar a todos.",
     "ano":2018,
-    "link":"https://www.rockstargames.com/br/reddeadredemption2",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg",
-    "genero": ["Ação", "Aventura", "Mundo Aberto"],
-    "plataforma": ["Rockstar Games", "Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Sea of Thieves",
-    "descricao":"Oferece a experiência pirata essencial, desde navegar e lutar até explorar e saquear - tudo o que você precisa para viver a vida pirata.",
-    "ano":2018,
-    "link":"https://www.xbox.com/pt-BR/games/store/sea-of-thieves-2024-edition/9p2n57mc619k",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1172620/library_600x900.jpg",
-    "genero": ["Aventura", "Mundo Aberto"],
-    "plataforma": ["Xbox", "Steam"]
+    "link":"https://store.steampowered.com/app/945360/Among_Us/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/945360/library_600x900.jpg",
+    "genero": ["Multijogador", "Social"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
     "nome":"Apex Legends",
@@ -63,51 +27,6 @@
     "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
-    "nome":"Call of Duty: Warzone",
-    "descricao":"Bem-vindo ao Call of Duty: Warzone, a enorme arena de combate gratuita que agora apresenta o novo mapa, Al Mazrah. Junte-se aos seus amigos e entre em um campo de batalha na cidade metropolitana e nos subúrbios rurais.",
-    "ano":2022,
-    "link":"https://www.callofduty.com/br/pt/warzone",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1938090/library_600x900.jpg",
-    "genero": ["Battle Royale", "FPS"],
-    "plataforma": ["Steam", "Xbox"]
-},
-{
-    "nome":"Fortnite",
-    "descricao":"Um jogo multijogador massivo onde 100 jogadores lutam para ser o último sobrevivente. Construa, lute e sobreviva.",
-    "ano":2017,
-    "link":"https://www.epicgames.com/fortnite/pt-BR/home",
-    "capa":"https://cdn1.epicgames.com/offer/fn/27BR_KeyArt_EGS_Launcher_Blade_2560x1440_2560x1440-437ae52f324930396d363b10c326b888",
-    "genero": ["Battle Royale", "Ação"],
-    "plataforma": ["Epic Games", "Xbox"]
-},
-{
-    "nome":"PUBG: BATTLEGROUNDS",
-    "descricao":"Aterrisse em locais estratégicos, saqueie armas e suprimentos e sobreviva para se tornar a última equipe de pé em vários e diversos campos de batalha. Forme um esquadrão e entre nos campos de batalha para a experiência Battle Royale que só PUBG: BATTLEGROUNDS pode oferecer.",
-    "ano":2017,
-    "link":"https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/578080/library_600x900.jpg",
-    "genero": ["Battle Royale", "Sobrevivência", "Tiro em Terceira Pessoa"],
-    "plataforma": ["Steam", "Xbox"]
-},
-{
-    "nome":"It Takes Two",
-    "descricao":"Embarque na jornada mais maluca da sua vida em It Takes Two, um jogo de aventura e plataforma criado exclusivamente para o modo cooperativo.",
-    "ano":2021,
-    "link":"https://www.ea.com/pt-br/games/it-takes-two",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1426210/library_600x900.jpg",
-    "genero": ["Cooperativo", "Aventura", "Plataforma"],
-    "plataforma": ["Steam", "Xbox"]
-},
-{
-    "nome":"Overcooked! 2",
-    "descricao":"Volte para o Reino da Cebola e monte sua equipe de chefs em um jogo cooperativo clássico de sofá ou online para até quatro jogadores. Segure seus aventais... é hora de salvar o mundo (de novo!).",
-    "ano":2018,
-    "link":"https://store.steampowered.com/app/728880/Overcooked_2/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/728880/library_600x900.jpg",
-    "genero": ["Cooperativo", "Simulação"],
-    "plataforma": ["Steam", "Xbox"]
-},
-{
     "nome":"Assetto Corsa Competizione",
     "descricao":"O jogo oficial do GT World Challenge. Graças à extraordinária qualidade da simulação, o jogo permitirá que você experimente a atmosfera real do campeonato GT3, competindo contra pilotos, equipes, carros e circuitos oficiais.",
     "ano":2019,
@@ -117,66 +36,30 @@
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"F1 24",
-    "descricao":"Aproxime-se da ação como nunca antes com o EA SPORTS™ F1® 24, o jogo oficial do 2024 FIA Formula One World Championship™. Liberte o seu campeão em busca de uma carreira que definirá seu legado na F1®.",
-    "ano":2024,
-    "link":"https://www.ea.com/pt-br/games/f1/f1-24",
-    "capa":"https://cdn1.epicgames.com/offer/edffc5fcc62140a7afd239d9e65df463/EGS_F124_Codemasters_S2_1200x1600-4640c5c849df939a2303ab872d618530",
-    "genero": ["Corrida", "Simulação", "Esportes"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Forza Horizon 5",
-    "descricao":"Explore as paisagens vibrantes e em constante evolução do México no melhor jogo de corrida de mundo aberto.",
-    "ano":2021,
-    "link":"https://www.xbox.com/pt-BR/games/store/forza-horizon-5/9nkx70bbcdrn",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1551360/library_600x900.jpg",
-    "genero": ["Corrida", "Mundo Aberto"],
-    "plataforma": ["Xbox", "Steam"]
-},
-{
-    "nome":"Need for Speed Unbound",
-    "descricao":"Corra contra o tempo, despiste a polícia e participe das eliminatórias semanais para chegar ao The Grand, o maior desafio de corrida de rua de Lakeshore. Encha sua garagem com carros personalizados e ajustados com precisão.",
-    "ano":2022,
-    "link":"https://www.ea.com/pt-br/games/need-for-speed/need-for-speed-unbound",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1846380/library_600x900.jpg",
-    "genero": ["Corrida", "Ação", "Mundo Aberto"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"The Crew Motorfest",
-    "descricao":"Bem-vindo ao Motorfest, a experiência de direção definitiva! Explore o vibrante mundo aberto da ilha de O'ahu, no Havaí, enquanto compete em corridas intensas, eventos temáticos e muito mais!",
+    "nome":"Baldur's Gate 3",
+    "descricao":"Reúna seu grupo e retorne aos Reinos Esquecidos em um conto de companheirismo e traição, sacrifício e sobrevivência, e a atração do poder absoluto.",
     "ano":2023,
-    "link":"https://www.ubisoft.com/pt-br/game/the-crew/motorfest",
-    "capa":"https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw21a98c4a/images/large/63bc67dbd406ab22f1174305.jpg",
-    "genero": ["Corrida", "Mundo Aberto", "Ação"],
-    "plataforma": ["Epic Games", "Xbox"]
-},
-{
-    "nome":"EA Sports FC 25",
-    "descricao":"EA SPORTS FC™ 25 traz o Jogo de Todo Mundo com inovações que proporcionam uma autenticidade futebolística revolucionária. Experimente o futebol de uma forma mais próxima, com tecnologias de ponta que trazem um realismo incomparável a cada partida.",
-    "ano":2024,
-    "link":"https://www.ea.com/pt-br/games/ea-sports-fc/fc-25",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2195250/library_600x900.jpg",
-    "genero": ["Esportes", "Simulação"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"NBA 2K24",
-    "descricao":"Pegue seu time e experimente o passado, presente e futuro da cultura do basquete no NBA 2K24. Desfrute de muita ação pura e autêntica e opções ilimitadas de personalização do MyPLAYER no MyCAREER.",
-    "ano":2023,
-    "link":"https://nba.2k.com/2k24/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2338770/library_600x900.jpg",
-    "genero": ["Esportes", "Simulação"],
+    "link":"https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900.jpg",
+    "genero": ["RPG", "Estratégia"],
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"Rocket League",
-    "descricao":"Um híbrido de alta potência de futebol estilo arcade e caos veicular. Jogue futebol com carros movidos a foguete.",
-    "ano":2015,
-    "link":"https://www.epicgames.com/store/pt-BR/p/rocket-league",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/252950/library_600x900.jpg",
-    "genero": ["Esportes", "Ação"],
+    "nome":"Call of Duty: Warzone",
+    "descricao":"Bem-vindo ao Call of Duty: Warzone, a enorme arena de combate gratuita que agora apresenta o novo mapa, Al Mazrah. Junte-se aos seus amigos e entre em um campo de batalha na cidade metropolitana e nos subúrbios rurais.",
+    "ano":2022,
+    "link":"https://www.callofduty.com/br/pt/warzone",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1938090/library_600x900.jpg",
+    "genero": ["Battle Royale", "FPS"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"Control",
+    "descricao":"Após uma agência secreta em Nova York ser invadida por uma ameaça de outro mundo, você se torna a nova Diretora lutando para recuperar o Controle.",
+    "ano":2019,
+    "link":"https://store.epicgames.com/pt-BR/p/control",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/870780/library_600x900.jpg",
+    "genero": ["Ação", "Aventura", "Tiro em Terceira Pessoa"],
     "plataforma": ["Epic Games", "Steam", "Xbox"]
 },
 {
@@ -187,6 +70,24 @@
     "capa":"https://cdn.akamai.steamstatic.com/steam/apps/730/library_600x900.jpg",
     "genero": ["FPS", "Tático"],
     "plataforma": ["Steam"]
+},
+{
+    "nome":"Cyberpunk 2077",
+    "descricao":"Um RPG de ação e aventura em mundo aberto ambientado em Night City, uma megalópole obcecada por poder, glamour e modificações corporais.",
+    "ano":2020,
+    "link":"https://www.cyberpunk.net/br/pt-br/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900.jpg",
+    "genero": ["RPG", "Ação"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Dead by Daylight",
+    "descricao":"Um jogo de terror multijogador (4vs1) onde um jogador assume o papel do Assassino selvagem, e os outros quatro jogadores jogam como Sobreviventes, tentando escapar do Assassino.",
+    "ano":2016,
+    "link":"https://store.steampowered.com/app/381210/Dead_by_Daylight/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/381210/library_600x900.jpg",
+    "genero": ["Survival Horror", "Multijogador"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
     "nome":"Deep Rock Galactic",
@@ -207,30 +108,57 @@
     "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
-    "nome":"Halo Infinite",
-    "descricao":"A mais recente aventura do Master Chief, com uma campanha expansiva e um modo multijogador gratuito que marcam o retorno da franquia.",
-    "ano":2021,
-    "link":"https://www.xbox.com/pt-BR/games/store/halo-infinite/9pp5g1f0c2b6",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1240440/library_600x900.jpg",
-    "genero": ["FPS", "Ação"],
-    "plataforma": ["Xbox", "Steam"]
-},
-{
-    "nome":"Valorant",
-    "descricao":"Um jogo de tiro tático 5v5 baseado em personagens para competir globalmente. Uma mistura de habilidade, estratégia e momentos de alta intensidade.",
+    "nome":"DOOM Eternal",
+    "descricao":"Os exércitos do inferno invadiram a Terra. Torne-se o Slayer em uma campanha épica para um jogador para conquistar demônios através de dimensões e impedir a destruição final da humanidade.",
     "ano":2020,
-    "link":"https://playvalorant.com/pt-br/",
-    "capa":"https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/VAL_2560x1440_2560x1440-38e42c33fa24d77a9a32310417554823",
-    "genero": ["FPS", "Tático"],
-    "plataforma": ["Epic Games"]
+    "link":"https://store.steampowered.com/app/782330/DOOM_Eternal/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/782330/library_600x900.jpg",
+    "genero": ["FPS", "Ação"],
+    "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"Hollow Knight",
-    "descricao":"Explore um vasto reino em ruínas de insetos e heróis. Uma aventura de ação clássica em 2D com um belo estilo de arte desenhado à mão.",
-    "ano":2017,
-    "link":"https://store.steampowered.com/app/367520/Hollow_Knight/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/367520/library_600x900.jpg",
-    "genero": ["Metroidvania", "Aventura"],
+    "nome":"EA Sports FC 25",
+    "descricao":"EA SPORTS FC™ 25 traz o Jogo de Todo Mundo com inovações que proporcionam uma autenticidade futebolística revolucionária. Experimente o futebol de uma forma mais próxima, com tecnologias de ponta que trazem um realismo incomparável a cada partida.",
+    "ano":2024,
+    "link":"https://www.ea.com/pt-br/games/ea-sports-fc/fc-25",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2195250/library_600x900.jpg",
+    "genero": ["Esportes", "Simulação"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Elden Ring",
+    "descricao":"Levante-se, Maculado, e seja guiado pela graça para brandir o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.",
+    "ano":2022,
+    "link":"https://pt.bandainamcoent.eu/elden-ring/elden-ring",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg",
+    "genero": ["RPG de Ação", "Soulslike"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"F1 24",
+    "descricao":"Aproxime-se da ação como nunca antes com o EA SPORTS™ F1® 24, o jogo oficial do 2024 FIA Formula One World Championship™. Liberte o seu campeão em busca de uma carreira que definirá seu legado na F1®.",
+    "ano":2024,
+    "link":"https://www.ea.com/pt-br/games/f1/f1-24",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2345510/library_600x900.jpg",
+    "genero": ["Corrida", "Simulação", "Esportes"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Fall Guys",
+    "descricao":"Você está convidado a mergulhar e desviar em seu caminho para a vitória no panteão da falta de jeito. Novato ou profissional? Sozinho ou em grupo? Fall Guys oferece o espetáculo mais divertido e em constante evolução.",
+    "ano":2020,
+    "link":"https://www.fallguys.com/pt-BR",
+    "capa":"https://cdn1.epicgames.com/offer/0cf04b41be9347aa9cf28d4cb1b01004/EGS_FallGuys_Mediatonic_S2_1200x1600-6f43e8574d3f48c0981a024987471f68",
+    "genero": ["Multijogador", "Party Game"],
+    "plataforma": ["Epic Games", "Xbox"]
+},
+{
+    "nome":"Fallout 4",
+    "descricao":"Como o único sobrevivente do Refúgio 111, você entra em um mundo destruído pela guerra nuclear. Cada segundo é uma luta pela sobrevivência, e cada escolha é sua.",
+    "ano":2015,
+    "link":"https://store.steampowered.com/app/377160/Fallout_4/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/377160/library_600x900.jpg",
+    "genero": ["RPG", "Mundo Aberto"],
     "plataforma": ["Steam", "Xbox"]
 },
 {
@@ -243,85 +171,301 @@
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"The Elder Scrolls Online",
-    "descricao":"Junte-se a mais de 22 milhões de jogadores no premiado RPG multijogador online e vivencie uma história em constante expansão em um mundo persistente de The Elder Scrolls.",
-    "ano":2014,
-    "link":"https://www.elderscrollsonline.com/pt/home",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/306130/library_600x900.jpg",
-    "genero": ["MMO", "RPG"],
+    "nome":"Five Nights at Freddy's: Security Breach",
+    "descricao":"Jogue como Gregory, um garoto preso durante a noite no Mega Pizzaplex de Freddy Fazbear. Com a ajuda do próprio Freddy, Gregory deve sobreviver à caça quase imparável de personagens reimaginados de Five Nights at Freddy's - assim como a novas e horríveis ameaças.",
+    "ano":2021,
+    "link":"https://store.steampowered.com/app/747660/Five_Nights_at_Freddys_Security_Breach/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/747660/library_600x900.jpg",
+    "genero": ["Terror", "Survival Horror"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Fortnite",
+    "descricao":"Um jogo multijogador massivo onde 100 jogadores lutam para ser o último sobrevivente. Construa, lute e sobreviva.",
+    "ano":2017,
+    "link":"https://www.epicgames.com/fortnite/pt-BR/home",
+    "capa":"https://cdn2.steamgriddb.com/thumb/43630bf866dd82076842a14c302d9de1.jpg",
+    "genero": ["Battle Royale", "Ação"],
+    "plataforma": ["Epic Games", "Xbox"]
+},
+{
+    "nome":"Forza Horizon 5",
+    "descricao":"Explore as paisagens vibrantes e em constante evolução do México no melhor jogo de corrida de mundo aberto.",
+    "ano":2021,
+    "link":"https://www.xbox.com/pt-BR/games/store/forza-horizon-5/9nkx70bbcdrn",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1551360/library_600x900.jpg",
+    "genero": ["Corrida", "Mundo Aberto"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Gears 5",
+    "descricao":"Com a guerra total se aproximando, Kait Diaz se liberta para descobrir sua conexão com o inimigo e descobre o verdadeiro perigo para Sera – ela mesma.",
+    "ano":2019,
+    "link":"https://www.xbox.com/pt-BR/games/store/gears-5/c2kdnlt2h7u6",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1097840/library_600x900.jpg",
+    "genero": ["Ação", "Tiro em Terceira Pessoa"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Genshin Impact",
+    "descricao":"Viaje por Teyvat para encontrar seu irmão perdido e buscar respostas dos Sete — os deuses de cada elemento. Explore este mundo maravilhoso, junte-se a uma gama diversificada de personagens e desvenda os inúmeros mistérios que Teyvat guarda.",
+    "ano":2020,
+    "link":"https://www.epicgames.com/store/pt-BR/p/genshin-impact",
+    "capa":"https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshin-impact-1_1200x1600-4a56973e13ee8fc3d3754372b62d4592",
+    "genero": ["RPG", "Ação", "Mundo Aberto"],
+    "plataforma": ["Epic Games"]
+},
+{
+    "nome":"God of War",
+    "descricao":"Kratos vive agora como um homem no reino dos deuses e monstros nórdicos. É neste mundo duro e implacável que ele deve lutar para sobreviver... e ensinar seu filho a fazer o mesmo.",
+    "ano":2018,
+    "link":"https://store.steampowered.com/app/1593500/God_of_War/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1593500/library_600x900.jpg",
+    "genero": ["Ação", "Aventura", "RPG"],
+    "plataforma": ["Steam", "Epic Games"]
+},
+{
+    "nome":"Grand Theft Auto V",
+    "descricao":"Um jovem malandro de rua, um ladrão de bancos aposentado e um psicopata aterrorizante se envolvem com o submundo do crime, o governo dos EUA e a indústria do entretenimento.",
+    "ano":2013,
+    "link":"https://www.rockstargames.com/gta-v",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/271590/library_600x900.jpg",
+    "genero": ["Ação", "Aventura", "Mundo Aberto"],
+    "plataforma": ["Rockstar Games", "Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Hades",
+    "descricao":"Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste 'roguelike' dos criadores de Bastion e Transistor.",
+    "ano":2020,
+    "link":"https://store.steampowered.com/app/1145360/Hades/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900.jpg",
+    "genero": ["Roguelike", "Ação"],
+    "plataforma": ["Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Halo Infinite",
+    "descricao":"A mais recente aventura do Master Chief, com uma campanha expansiva e um modo multijogador gratuito que marcam o retorno da franquia.",
+    "ano":2021,
+    "link":"https://www.xbox.com/pt-BR/games/store/halo-infinite/9pp5g1f0c2b6",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1240440/library_600x900.jpg",
+    "genero": ["FPS", "Ação"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Hellblade II: Senua's Saga",
+    "descricao":"A sequência da premiada saga de Senua. Uma jornada brutal de sobrevivência através do mito e da tirania da Islândia Viking.",
+    "ano":2024,
+    "link":"https://www.xbox.com/pt-BR/games/store/senuas-saga-hellblade-ii/9p3wxcc0ztn4",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2461850/library_600x900.jpg",
+    "genero": ["Ação", "Aventura"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Hollow Knight",
+    "descricao":"Explore um vasto reino em ruínas de insetos e heróis. Uma aventura de ação clássica em 2D com um belo estilo de arte desenhado à mão.",
+    "ano":2017,
+    "link":"https://store.steampowered.com/app/367520/Hollow_Knight/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/367520/library_600x900.jpg",
+    "genero": ["Metroidvania", "Aventura"],
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"World of Warcraft",
-    "descricao":"Junte-se a milhões de jogadores e entre em um mundo de mitos, magia e aventura sem fim. Com uma única assinatura, você pode acessar tanto o World of Warcraft quanto o World of Warcraft Classic.",
-    "ano":2004,
-    "link":"https://worldofwarcraft.blizzard.com/pt-br/",
-    "capa":"https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab05b/blt466317535789a1d2/62d5d2222e8f8c127b5575f9/wow-dragonflight-base-pt-br.jpg",
-    "genero": ["MMO", "RPG"],
-    "plataforma": ["Battle.net"]
+    "nome":"It Takes Two",
+    "descricao":"Embarque na jornada mais maluca da sua vida em It Takes Two, um jogo de aventura e plataforma criado exclusivamente para o modo cooperativo.",
+    "ano":2021,
+    "link":"https://www.ea.com/pt-br/games/it-takes-two",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1426210/library_600x900.jpg",
+    "genero": ["Cooperativo", "Aventura", "Plataforma"],
+    "plataforma": ["Steam", "Xbox"]
 },
 {
     "nome":"League of Legends",
     "descricao":"Um jogo de estratégia em equipe onde duas equipes de cinco campeões poderosos se enfrentam para destruir a base um do outro.",
     "ano":2009,
     "link":"https://www.leagueoflegends.com/pt-br/",
-    "capa":"https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S2_1200x1600-7fd64f0f7b6749a09e0cd7e6e3938e82",
+    "capa":"https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S2_1200x1600-75925a3daacb83006053549de108e8e5",
     "genero": ["MOBA", "Estratégia"],
     "plataforma": ["Riot Games", "Epic Games"]
 },
 {
-    "nome":"Among Us",
-    "descricao":"Um jogo de trabalho em equipe e traição para 4-15 jogadores. Em uma nave espacial, os tripulantes tentam completar tarefas enquanto um ou mais impostores tentam sabotar e eliminar a todos.",
-    "ano":2018,
-    "link":"https://store.steampowered.com/app/945360/Among_Us/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/945360/library_600x900.jpg",
-    "genero": ["Multijogador", "Social"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Fall Guys",
-    "descricao":"Você está convidado a mergulhar e desviar em seu caminho para a vitória no panteão da falta de jeito. Novato ou profissional? Sozinho ou em grupo? Fall Guys oferece o espetáculo mais divertido e em constante evolução.",
-    "ano":2020,
-    "link":"https://www.fallguys.com/pt-BR",
-    "capa":"https://cdn1.epicgames.com/offer/50118b7f954e450f8823df1614b24e80/EGS_FallGuys_Mediatonic_S2_1200x1600-fb6e65495ac06f752276740915549557",
-    "genero": ["Multijogador", "Party Game"],
-    "plataforma": ["Epic Games", "Xbox"]
-},
-{
-    "nome":"Baldur's Gate 3",
-    "descricao":"Reúna seu grupo e retorne aos Reinos Esquecidos em um conto de companheirismo e traição, sacrifício e sobrevivência, e a atração do poder absoluto.",
+    "nome":"Lethal Company",
+    "descricao":"Um jogo de terror cooperativo sobre vasculhar luas industrializadas abandonadas para coletar sucata para a Companhia.",
     "ano":2023,
-    "link":"https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900.jpg",
-    "genero": ["RPG", "Estratégia"],
+    "link":"https://store.steampowered.com/app/1966720/Lethal_Company/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1966720/library_600x900.jpg",
+    "genero": ["Terror", "Cooperativo"],
+    "plataforma": ["Steam"]
+},
+{
+    "nome":"Microsoft Flight Simulator",
+    "descricao":"Voe em aviões altamente detalhados e precisos no simulador de voo da próxima geração. Teste suas habilidades de pilotagem contra os desafios do voo noturno, simulação atmosférica em tempo real e clima ao vivo.",
+    "ano":2020,
+    "link":"https://www.xbox.com/pt-BR/games/microsoft-flight-simulator",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1250410/library_600x900.jpg",
+    "genero": ["Simulação"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Minecraft",
+    "descricao":"Explore seu próprio mundo único, sobreviva à noite e crie tudo o que puder imaginar!",
+    "ano":2011,
+    "link":"https://www.xbox.com/pt-BR/games/store/minecraft/9nblggh537bl",
+    "capa":"https://cdn2.steamgriddb.com/thumb/7344bcd24a4a0393f45cad1a212c62e7.jpg",
+    "genero": ["Sandbox", "Sobrevivência"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"NBA 2K24",
+    "descricao":"Pegue seu time e experimente o passado, presente e futuro da cultura do basquete no NBA 2K24. Desfrute de muita ação pura e autêntica e opções ilimitadas de personalização do MyPLAYER no MyCAREER.",
+    "ano":2023,
+    "link":"https://nba.2k.com/2k24/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2338770/library_600x900.jpg",
+    "genero": ["Esportes", "Simulação"],
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"Cyberpunk 2077",
-    "descricao":"Um RPG de ação e aventura em mundo aberto ambientado em Night City, uma megalópole obcecada por poder, glamour e modificações corporais.",
-    "ano":2020,
-    "link":"https://www.cyberpunk.net/br/pt-br/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900.jpg",
-    "genero": ["RPG", "Ação"],
+    "nome":"Need for Speed Unbound",
+    "descricao":"Corra contra o tempo, despiste a polícia e participe das eliminatórias semanais para chegar ao The Grand, o maior desafio de corrida de rua de Lakeshore. Encha sua garagem com carros personalizados e ajustados com precisão.",
+    "ano":2022,
+    "link":"https://www.ea.com/pt-br/games/need-for-speed/need-for-speed-unbound",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1846380/library_600x900.jpg",
+    "genero": ["Corrida", "Ação", "Mundo Aberto"],
     "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
-    "nome":"Fallout 4",
-    "descricao":"Como o único sobrevivente do Refúgio 111, você entra em um mundo destruído pela guerra nuclear. Cada segundo é uma luta pela sobrevivência, e cada escolha é sua.",
-    "ano":2015,
-    "link":"https://store.steampowered.com/app/377160/Fallout_4/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/377160/library_600x900.jpg",
-    "genero": ["RPG", "Mundo Aberto"],
+    "nome":"Overcooked! 2",
+    "descricao":"Volte para o Reino da Cebola e monte sua equipe de chefs em um jogo cooperativo clássico de sofá ou online para até quatro jogadores. Segure seus aventais... é hora de salvar o mundo (de novo!).",
+    "ano":2018,
+    "link":"https://store.steampowered.com/app/728880/Overcooked_2/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/728880/library_600x900.jpg",
+    "genero": ["Cooperativo", "Simulação"],
     "plataforma": ["Steam", "Xbox"]
 },
 {
-    "nome":"Genshin Impact",
-    "descricao":"Viaje por Teyvat para encontrar seu irmão perdido e buscar respostas dos Sete — os deuses de cada elemento. Explore este mundo maravilhoso, junte-se a uma gama diversificada de personagens e desvende os inúmeros mistérios que Teyvat guarda.",
+    "nome":"Palworld",
+    "descricao":"Lute, cultive, construa e trabalhe ao lado de criaturas misteriosas chamadas 'Pals' neste jogo de sobrevivência e criação de monstros multijogador em mundo aberto.",
+    "ano":2024,
+    "link":"https://store.steampowered.com/app/1623730/Palworld/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1623730/library_600x900.jpg",
+    "genero": ["Sobrevivência", "Mundo Aberto"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"Phasmophobia",
+    "descricao":"Um jogo de terror psicológico cooperativo online para 4 jogadores. A atividade paranormal está em alta e cabe a você e sua equipe usar todo o equipamento de caça fantasma à sua disposição para reunir o máximo de evidências possível.",
     "ano":2020,
-    "link":"https://www.epicgames.com/store/pt-BR/p/genshin-impact",
-    "capa":"https://cdn1.epicgames.com/offer/gi-js/keyart_1200x1600_1200x1600-318014283fb415720e55674c0e0b991b",
-    "genero": ["RPG", "Ação", "Mundo Aberto"],
-    "plataforma": ["Epic Games"]
+    "link":"https://store.steampowered.com/app/739630/Phasmophobia/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/739630/library_600x900.jpg",
+    "genero": ["Terror", "Cooperativo"],
+    "plataforma": ["Steam"]
+},
+{
+    "nome":"Poppy Playtime",
+    "descricao":"Você deve permanecer vivo nesta aventura de terror e quebra-cabeça. Sobreviva aos brinquedos vingativos que esperam por você na fábrica de brinquedos abandonada.",
+    "ano":2021,
+    "link":"https://store.steampowered.com/app/1721470/Poppy_Playtime/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1721470/library_600x900.jpg",
+    "genero": ["Terror", "Quebra-cabeça"],
+    "plataforma": ["Steam", "Epic Games", "Xbox", "PlayStation"]
+},
+{
+    "nome":"Poppy Playtime: Chapter 2",
+    "descricao":"Três vezes o tamanho do Capítulo 1, você deve descer mais fundo na fábrica de brinquedos. Quebra-cabeças entorpecentes e brinquedos horríveis aguardam.",
+    "ano":2022,
+    "link":"https://store.steampowered.com/app/1946970/Poppy_Playtime__Chapter_2/",
+    "capa":"https://cdn2.steamgriddb.com/thumb/cf11b8b0b3f4f272c78494699e970814.jpg",
+    "genero": ["Terror", "Quebra-cabeça"],
+    "plataforma": ["Steam", "Epic Games", "Xbox", "PlayStation"]
+},
+{
+    "nome":"Poppy Playtime: Chapter 3",
+    "descricao":"Um orfanato decrépito conhecido como Playcare fica sob a outrora mágica fábrica de brinquedos. Você deve percorrer este lugar assombrado, resolvendo novos quebra-cabeças e evitando os pesadelos que se escondem no escuro.",
+    "ano":2024,
+    "link":"https://store.steampowered.com/app/1721470/Poppy_Playtime/",
+    "capa":"https://cdn2.steamgriddb.com/thumb/f4d6e0961a0b88bd7b4c635f10b60a66.jpg",
+    "genero": ["Terror", "Quebra-cabeça"],
+    "plataforma": ["Steam"]
+},
+{
+    "nome":"Poppy Playtime: Chapter 4",
+    "descricao":"A jornada continua conforme você mergulha ainda mais nas profundezas do Playcare, enfrentando novos puzzles devastadores e encontrando criaturas ainda mais aterrorizantes.",
+    "ano":2025,
+    "link":"https://store.steampowered.com/app/1721470/Poppy_Playtime/",
+    "capa":"https://cdn2.steamgriddb.com/thumb/6526e9a0cba7516e930fb857323db901.jpg",
+    "genero": ["Terror", "Quebra-cabeça"],
+    "plataforma": ["Steam", "Epic Games", "Xbox", "PlayStation"]
+},
+{
+    "nome":"Poppy Playtime: Chapter 5 (Em Breve)",
+    "descricao":"O clímax da história se aproxima. Desvende os segredos finais da fábrica de brinquedos e chegue ao fim desta aterradora aventura de mistério e sobrevivência.",
+    "ano":2026,
+    "link":"https://store.steampowered.com/app/1721470/Poppy_Playtime/",
+    "capa":"https://cdn2.steamgriddb.com/thumb/a58d5c817f22a22875f3a5632c36cde3.jpg",
+    "genero": ["Terror", "Quebra-cabeça"],
+    "plataforma": ["Steam", "Epic Games", "Xbox", "PlayStation"]
+},
+{
+    "nome":"PROJECT: PLAYTIME",
+    "descricao":"Um jogo de terror multijogador gratuito onde seis jogadores tentam criar um brinquedo gigante enquanto sobrevivem a um monstro aterrorizante que vaga pela fábrica de brinquedos.",
+    "ano":2022,
+    "link":"https://store.steampowered.com/app/1961460/PROJECT_PLAYTIME/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1961460/library_600x900.jpg",
+    "genero": ["Terror", "Multijogador"],
+    "plataforma": ["Steam"]
+},
+{
+    "nome":"PUBG: BATTLEGROUNDS",
+    "descricao":"Aterrisse em locais estratégicos, saqueie armas e suprimentos e sobreviva para se tornar a última equipe de pé em vários e diversos campos de batalha. Forme um esquadrão e entre nos campos de batalha para a experiência Battle Royale que só PUBG: BATTLEGROUNDS pode oferecer.",
+    "ano":2017,
+    "link":"https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/578080/library_600x900.jpg",
+    "genero": ["Battle Royale", "Sobrevivência", "Tiro em Terceira Pessoa"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"Red Dead Redemption 2",
+    "descricao":"América, 1899. O fim da era do Velho Oeste começou. Depois de um assalto que deu errado na cidade de Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a fugir.",
+    "ano":2018,
+    "link":"https://www.rockstargames.com/br/reddeadredemption2",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg",
+    "genero": ["Ação", "Aventura", "Mundo Aberto"],
+    "plataforma": ["Rockstar Games", "Steam", "Epic Games", "Xbox"]
+},
+{
+    "nome":"Resident Evil 4",
+    "descricao":"A sobrevivência é apenas o começo. Seis anos se passaram desde o desastre biológico em Raccoon City. Leon S. Kennedy, um dos sobreviventes, rastreia a filha sequestrada do presidente até uma vila europeia isolada.",
+    "ano":2023,
+    "link":"https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2050650/library_600x900.jpg",
+    "genero": ["Survival Horror", "Ação"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"Rocket League",
+    "descricao":"Um híbrido de alta potência de futebol estilo arcade e caos veicular. Jogue futebol com carros movidos a foguete.",
+    "ano":2015,
+    "link":"https://www.epicgames.com/store/pt-BR/p/rocket-league",
+    "capa":"https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S2_1200x1600-77925a3daacb83006053549de108e8e5",
+    "genero": ["Esportes", "Ação"],
+    "plataforma": ["Epic Games", "Steam", "Xbox"]
+},
+{
+    "nome":"Sea of Thieves",
+    "descricao":"Oferece a experiência pirata essencial, desde navegar e lutar até explorar e saquear - tudo o que você precisa para viver a vida pirata.",
+    "ano":2018,
+    "link":"https://www.xbox.com/pt-BR/games/store/sea-of-thieves-2024-edition/9p2n57mc619k",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1172620/library_600x900.jpg",
+    "genero": ["Aventura", "Mundo Aberto"],
+    "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Stardew Valley",
+    "descricao":"Você herdou a antiga fazenda do seu avô. Armado com ferramentas de segunda mão e algumas moedas, você parte para começar sua nova vida.",
+    "ano":2016,
+    "link":"https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg",
+    "genero": ["Simulação", "RPG"],
+    "plataforma": ["Steam", "Xbox"]
 },
 {
     "nome":"Starfield",
@@ -331,6 +475,33 @@
     "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1716740/library_600x900.jpg",
     "genero": ["RPG", "Ficção Científica"],
     "plataforma": ["Xbox", "Steam"]
+},
+{
+    "nome":"Terraria",
+    "descricao":"Cave, lute, explore, construa! Nada é impossível neste jogo de aventura cheio de ação. O mundo é sua tela e o chão é sua tinta.",
+    "ano":2011,
+    "link":"https://store.steampowered.com/app/105600/Terraria/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/105600/library_600x900.jpg",
+    "genero": ["Sandbox", "Sobrevivência", "Aventura"],
+    "plataforma": ["Steam", "Xbox"]
+},
+{
+    "nome":"The Crew Motorfest",
+    "descricao":"Bem-vindo ao Motorfest, a experiência de direção definitiva! Explore o vibrante mundo aberto da ilha de O'ahu, no Havaí, enquanto compete em corridas intensas, eventos temáticos e muito mais!",
+    "ano":2023,
+    "link":"https://www.ubisoft.com/pt-br/game/the-crew/motorfest",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2698940/library_600x900.jpg",
+    "genero": ["Corrida", "Mundo Aberto", "Ação"],
+    "plataforma": ["Epic Games", "Xbox"]
+},
+{
+    "nome":"The Elder Scrolls Online",
+    "descricao":"Junte-se a mais de 22 milhões de jogadores no premiado RPG multijogador online e vivencie uma história em constante expansão em um mundo persistente de The Elder Scrolls.",
+    "ano":2014,
+    "link":"https://www.elderscrollsonline.com/pt/home",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/306130/library_600x900.jpg",
+    "genero": ["MMO", "RPG"],
+    "plataforma": ["Steam", "Xbox"]
 },
 {
     "nome":"The Elder Scrolls V: Skyrim",
@@ -351,111 +522,48 @@
     "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
-    "nome":"Elden Ring",
-    "descricao":"Levante-se, Maculado, e seja guiado pela graça para brandir o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.",
-    "ano":2022,
-    "link":"https://pt.bandainamcoent.eu/elden-ring/elden-ring",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg",
-    "genero": ["RPG de Ação", "Soulslike"],
-    "plataforma": ["Steam", "Xbox"]
-},
-{
-    "nome":"Hades",
-    "descricao":"Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste 'roguelike' dos criadores de Bastion e Transistor.",
-    "ano":2020,
-    "link":"https://store.steampowered.com/app/1145360/Hades/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900.jpg",
-    "genero": ["Roguelike", "Ação"],
+    "nome":"Tom Clancy's Rainbow Six Siege",
+    "descricao":"Mergulhe em uma jogabilidade 5v5 explosiva, competições de alto risco e batalhas emocionantes de equipe PVP. Uma experiência em constante expansão com oportunidades ilimitadas para aperfeiçoar sua estratégia.",
+    "ano":2015,
+    "link":"https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/359550/library_600x900.jpg",
+    "genero": ["FPS", "Tático", "Multijogador"],
     "plataforma": ["Steam", "Epic Games", "Xbox"]
 },
 {
-    "nome":"Minecraft",
-    "descricao":"Explore seu próprio mundo único, sobreviva à noite e crie tudo o que puder imaginar!",
-    "ano":2011,
-    "link":"https://www.xbox.com/pt-BR/games/store/minecraft/9nblggh537bl",
-    "capa":"https://store-images.s-microsoft.com/image/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.419e3c9d-9dd3-4a28-a9f3-a12350215871",
-    "genero": ["Sandbox", "Sobrevivência"],
-    "plataforma": ["Xbox", "Steam"]
-},
-{
-    "nome":"Microsoft Flight Simulator",
-    "descricao":"Voe em aviões altamente detalhados e precisos no simulador de voo da próxima geração. Teste suas habilidades de pilotagem contra os desafios do voo noturno, simulação atmosférica em tempo real e clima ao vivo.",
+    "nome":"Valorant",
+    "descricao":"Um jogo de tiro tático 5v5 baseado em personagens para competir globalmente. Uma mistura de habilidade, estratégia e momentos de alta intensidade.",
     "ano":2020,
-    "link":"https://www.xbox.com/pt-BR/games/microsoft-flight-simulator",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1250410/library_600x900.jpg",
-    "genero": ["Simulação"],
-    "plataforma": ["Xbox", "Steam"]
+    "link":"https://playvalorant.com/pt-br/",
+    "capa":"https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-9ebf575033287e2177106da5ff45c1d4",
+    "genero": ["FPS", "Tático"],
+    "plataforma": ["Epic Games"]
 },
 {
-    "nome":"Stardew Valley",
-    "descricao":"Você herdou a antiga fazenda do seu avô. Armado com ferramentas de segunda mão e algumas moedas, você parte para começar sua nova vida.",
-    "ano":2016,
-    "link":"https://store.steampowered.com/app/413150/Stardew_Valley/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg",
-    "genero": ["Simulação", "RPG"],
-    "plataforma": ["Steam", "Xbox"]
+    "nome":"World of Warcraft",
+    "descricao":"Junte-se a milhões de jogadores e entre em um mundo de mitos, magia e aventura sem fim. Com uma única assinatura, você pode acessar tanto o World of Warcraft quanto o World of Warcraft Classic.",
+    "ano":2004,
+    "link":"https://worldofwarcraft.blizzard.com/pt-br/",
+    "capa":"https://static-cdn.jtvnw.net/ttv-boxart/18122-600x800.jpg",
+    "genero": ["MMO", "RPG"],
+    "plataforma": ["Battle.net"]
 },
 {
-    "nome":"Palworld",
-    "descricao":"Lute, cultive, construa e trabalhe ao lado de criaturas misteriosas chamadas 'Pals' neste jogo de sobrevivência e criação de monstros multijogador em mundo aberto.",
+    "nome":"R.E.P.O",
+    "descricao":"Um jogo de ação e tiro em primeira pessoa com mecânicas roguelike. Explore uma nave abandonada, colete recursos e sobreviva aos perigos que a rodeiam.",
     "ano":2024,
-    "link":"https://store.steampowered.com/app/1623730/Palworld/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1623730/library_600x900.jpg",
-    "genero": ["Sobrevivência", "Mundo Aberto"],
-    "plataforma": ["Steam", "Xbox"]
+    "link":"https://store.epicgames.com/pt-BR/p/repo",
+    "capa":"https://cdn2.steamgriddb.com/thumb/9ca4292f040b141fd182d5028f27e503.jpg",
+    "genero": ["Ação", "FPS", "Roguelike"],
+    "plataforma": ["Epic Games", "Steam"]
 },
 {
-    "nome":"Alan Wake 2",
-    "descricao":"Uma série de assassinatos ritualísticos ameaça Bright Falls. Saga Anderson, uma agente do FBI, chega para investigar, enquanto Alan Wake tenta escapar do Lugar Obscuro.",
+    "nome":"Peak",
+    "descricao":"Um jogo desafiador que testa suas habilidades e reflexos em uma jornada pela montanha. Supere obstáculos, complete desafios e chegue ao topo.",
     "ano":2023,
-    "link":"https://www.epicgames.com/store/pt-BR/p/alan-wake-2",
-    "capa":"https://cdn1.epicgames.com/offer/5cb6b0262b3c4b93b59421a0045e4039/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-47355a8678e38ca2f186e31357747937",
-    "genero": ["Survival Horror", "Aventura"],
-    "plataforma": ["Epic Games", "Xbox"]
-},
-{
-    "nome":"Dead by Daylight",
-    "descricao":"Um jogo de terror multijogador (4vs1) onde um jogador assume o papel do Assassino selvagem, e os outros quatro jogadores jogam como Sobreviventes, tentando escapar do Assassino.",
-    "ano":2016,
-    "link":"https://store.steampowered.com/app/381210/Dead_by_Daylight/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/381210/library_600x900.jpg",
-    "genero": ["Survival Horror", "Multijogador"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Five Nights at Freddy's: Security Breach",
-    "descricao":"Jogue como Gregory, um garoto preso durante a noite no Mega Pizzaplex de Freddy Fazbear. Com a ajuda do próprio Freddy, Gregory deve sobreviver à caça quase imparável de personagens reimaginados de Five Nights at Freddy's - assim como a novas e horríveis ameaças.",
-    "ano":2021,
-    "link":"https://store.steampowered.com/app/747660/Five_Nights_at_Freddys_Security_Breach/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/747660/library_600x900.jpg",
-    "genero": ["Terror", "Survival Horror"],
-    "plataforma": ["Steam", "Epic Games", "Xbox"]
-},
-{
-    "nome":"Lethal Company",
-    "descricao":"Um jogo de terror cooperativo sobre vasculhar luas industrializadas abandonadas para coletar sucata para a Companhia.",
-    "ano":2023,
-    "link":"https://store.steampowered.com/app/1966720/Lethal_Company/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/1966720/library_600x900.jpg",
-    "genero": ["Terror", "Cooperativo"],
-    "plataforma": ["Steam"]
-},
-{
-    "nome":"Phasmophobia",
-    "descricao":"Um jogo de terror psicológico cooperativo online para 4 jogadores. A atividade paranormal está em alta e cabe a você e sua equipe usar todo o equipamento de caça fantasma à sua disposição para reunir o máximo de evidências possível.",
-    "ano":2020,
-    "link":"https://store.steampowered.com/app/739630/Phasmophobia/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/739630/library_600x900.jpg",
-    "genero": ["Terror", "Cooperativo"],
-    "plataforma": ["Steam"]
-},
-{
-    "nome":"Poppy Playtime: Chapter 3",
-    "descricao":"Um orfanato decrépito conhecido como Playcare fica sob a outrora mágica fábrica de brinquedos. Você deve percorrer este lugar assombrado, resolvendo novos quebra-cabeças e evitando os pesadelos que se escondem no escuro.",
-    "ano":2024,
-    "link":"https://store.steampowered.com/app/1721470/Poppy_Playtime/",
-    "capa":"https://cdn.akamai.steamstatic.com/steam/apps/2828020/library_600x900.jpg",
-    "genero": ["Terror", "Quebra-cabeça"],
-    "plataforma": ["Steam"]
+    "link":"https://store.steampowered.com/app/peak",
+    "capa":"https://cdn2.steamgriddb.com/thumb/b53b8b48c4b228b070851d52800bb9e1.jpg",
+    "genero": ["Ação", "Aventura"],
+    "plataforma": ["Steam", "Epic Games"]
 }
 ]
